@@ -57,11 +57,11 @@
   <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
     <h1 class="text-3xl font-extrabold tracking-widest">⚙️ AKASH | DevOps</h1>
     <div class="hidden md:flex gap-10 text-lg font-semibold">
-      <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
-      <a href="about.html" class="text-yellow-300">About</a>
-      <a href="services.html" class="hover:text-yellow-300 transition">Services</a>
-      <a href="gallery.html" class="hover:text-yellow-300 transition">Gallery</a>
-      <a href="contact.html" class="hover:text-yellow-300 transition">Contact</a>
+      <a href="index.jsp" class="hover:text-yellow-300 transition">Home</a>
+      <a href="about.jsp" class="text-yellow-300">About</a>
+      <a href="services.jsp" class="hover:text-yellow-300 transition">Services</a>
+      <a href="gallery.jsp" class="hover:text-yellow-300 transition">Gallery</a>
+      <a href="contact.jsp" class="hover:text-yellow-300 transition">Contact</a>
     </div>
   </div>
 </nav>

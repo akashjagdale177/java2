@@ -71,11 +71,11 @@
   <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
     <h1 class="text-3xl font-extrabold tracking-widest">⚙️ AKASH | DevOps</h1>
     <div class="hidden md:flex gap-10 text-lg font-semibold">
-      <a href="index.html" class="text-secondary hover:text-white transition">Home</a>
-      <a href="about.html" class="hover:text-secondary transition">About</a>
-      <a href="services.html" class="hover:text-secondary transition">Services</a>
-      <a href="gallery.html" class="hover:text-secondary transition">Gallery</a>
-      <a href="contact.html" class="hover:text-secondary transition">Contact</a>
+      <a href="index.jsp" class="text-secondary hover:text-white transition">Home</a>
+      <a href="about.jsp" class="hover:text-secondary transition">About</a>
+      <a href="services.jsp" class="hover:text-secondary transition">Services</a>
+      <a href="gallery.jsp" class="hover:text-secondary transition">Gallery</a>
+      <a href="contact.jsp" class="hover:text-secondary transition">Contact</a>
     </div>
   </div>
 </nav>
@@ -92,8 +92,8 @@
 
   <!-- Buttons -->
   <div class="mt-10 flex gap-6">
-    <a href="about.html" class="bg-white text-black px-8 py-4 rounded-full font-bold text-xl glow transition">⚡ About Me</a>
-    <a href="contact.html" class="bg-secondary text-black px-8 py-4 rounded-full font-bold text-xl glow transition">📨 Contact</a>
+    <a href="about.jsp" class="bg-white text-black px-8 py-4 rounded-full font-bold text-xl glow transition">⚡ About Me</a>
+    <a href="contact.jsp" class="bg-secondary text-black px-8 py-4 rounded-full font-bold text-xl glow transition">📨 Contact</a>
   </div>
 
   <!-- Icons -->
