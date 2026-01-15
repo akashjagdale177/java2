@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | DevOps Engineer</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DevOps Portfolio | Home</title>
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- 🎨 CUSTOM THEME COLORS -->
+<!-- Tailwind Custom Colors -->
 <script>
   tailwind.config = {
     theme: {
       extend: {
         colors: {
-          primary: '#f43f5e',   // 🔴 Red (Main)
-          secondary: '#fb923c', // 🟧 Orange
-          accent: '#a855f7'     // 🟣 Purple
+          primary: '#f43f5e',   // red-pink
+          secondary: '#fb923c', // orange
+          accent: '#a855f7'     // purple
         }
       }
     }
@@ -22,62 +22,82 @@
 </script>
 
 <style>
-/* Fade Up */
+/* 🔥 Typing Animation */
+.typing {
+  width: 30ch;
+  animation: typing 3s steps(30), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+}
+@keyframes typing { from { width: 0; } }
+@keyframes blink { 50% { border-color: transparent; } }
+
+/* ✨ Floating Icons */
+.float { animation: float 3s ease-in-out infinite; }
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 🌫️ Fade Up */
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s forwards;
 }
-@keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
+@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+
+/* ♻️ Parallax BG */
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Glow Hover */
+/* 🟣 Glow Hover */
 .glow:hover {
   box-shadow: 0 0 20px #fb923c, 0 0 40px #a855f7;
   transition: 0.3s;
 }
-
-/* Floating Icons */
-.float { animation: float 3s ease-in-out infinite; }
-@keyframes float {
-  0%{transform:translateY(0);}
-  50%{transform:translateY(-10px);}
-  100%{transform:translateY(0);}
-}
 </style>
-
 </head>
 
-<!-- 🌈 COLORFUL BACKGROUND UPDATED -->
-<body class="text-white bg-gradient-to-br from-primary via-black to-accent">
+<body class="text-white parallax bg-gradient-to-br from-primary via-black to-accent">
 
-<!-- Navbar -->
+<!-- 🔥 NAVBAR -->
 <nav class="backdrop-blur-xl bg-black/20 sticky top-0 z-50 border-b border-white/20 shadow-lg fade-up">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
     <h1 class="text-3xl font-extrabold tracking-widest">⚙️ AKASH | DevOps</h1>
     <div class="hidden md:flex gap-10 text-lg font-semibold">
-      <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
-      <a href="about.html" class="text-yellow-300">About</a>
-      <a href="services.html" class="hover:text-yellow-300 transition">Services</a>
-      <a href="gallery.html" class="hover:text-yellow-300 transition">Gallery</a>
-      <a href="contact.html" class="hover:text-yellow-300 transition">Contact</a>
+      <a href="index.html" class="text-secondary hover:text-white transition">Home</a>
+      <a href="about.html" class="hover:text-secondary transition">About</a>
+      <a href="services.html" class="hover:text-secondary transition">Services</a>
+      <a href="gallery.html" class="hover:text-secondary transition">Gallery</a>
+      <a href="contact.html" class="hover:text-secondary transition">Contact</a>
     </div>
   </div>
 </nav>
 
-<!-- About Section -->
-<section class="max-w-6xl mx-auto px-6 py-20 text-center fade-up">
-  <h1 class="text-6xl font-extrabold mb-10">About Me</h1>
+<!-- 🏠 HERO SECTION -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 fade-up">
+  <h1 class="text-6xl font-extrabold drop-shadow-xl">
+    Hi, I'm <span class="text-secondary">AKASH JAGDALE</span>
+  </h1>
 
-  <p class="text-2xl leading-loose opacity-90 max-w-4xl mx-auto fade-up">
-    I am <span class="text-secondary font-bold">AKASH JAGDALE</span>, a DevOps Engineer passionate about cloud computing,
-    automation, CI/CD, and infrastructure provisioning. My mission is to build reliable, scalable, automated systems
-    that help modern applications grow efficiently.
+  <p class="typing mt-6 text-2xl font-medium opacity-90">
+    DevOps Engineer | CI/CD | Cloud | Automation
   </p>
 
-  <!-- Floating Icons -->
-  <div class="flex justify-center gap-12 text-6xl mt-10 drop-shadow-xl">
+  <!-- Buttons -->
+  <div class="mt-10 flex gap-6">
+    <a href="about.html" class="bg-white text-black px-8 py-4 rounded-full font-bold text-xl glow transition">⚡ About Me</a>
+    <a href="contact.html" class="bg-secondary text-black px-8 py-4 rounded-full font-bold text-xl glow transition">📨 Contact</a>
+  </div>
+
+  <!-- Icons -->
+  <div class="mt-20 flex gap-12 text-5xl">
     <span class="float">🐳</span>
     <span class="float delay-150">☁️</span>
     <span class="float delay-300">🚀</span>
@@ -85,23 +105,21 @@
     <span class="float delay-700">🛠️</span>
     <span class="float delay-1000">💻</span>
   </div>
-
-  <h2 class="text-5xl font-bold mt-20 mb-10 fade-up">DevOps Skills</h2>
-
-  <div class="grid md:grid-cols-3 gap-8 px-4 text-black">
-    <div class="p-8 bg-white/90 rounded-3xl text-2xl font-bold glow fade-up">🐳 Docker / Containers</div>
-    <div class="p-8 bg-white/90 rounded-3xl text-2xl font-bold glow fade-up">☸️ Kubernetes / K8s</div>
-    <div class="p-8 bg-white/90 rounded-3xl text-2xl font-bold glow fade-up">🚀 CI/CD - Jenkins / GitHub Actions</div>
-    <div class="p-8 bg-white/90 rounded-3xl text-2xl font-bold glow fade-up">☁️ AWS / Azure / GCP</div>
-    <div class="p-8 bg-white/90 rounded-3xl text-2xl font-bold glow fade-up">📦 Terraform / IaC</div>
-    <div class="p-8 bg-white/90 rounded-3xl text-2xl font-bold glow fade-up">📊 Grafana / Prometheus</div>
-  </div>
 </section>
 
-<!-- Footer -->
-<footer class="mt-20 text-center bg-black/20 py-8 backdrop-blur-xl border-t border-white/20 fade-up">
-  <p class="text-lg tracking-wide">DevOps = Culture + Automation + Cloud</p>
-  <p class="text-sm opacity-70">© 2025 AKASH JAGDALE</p>
+<!-- ⚡ SCROLL MOTION SECTION -->
+<section class="py-24 bg-black/40 backdrop-blur-xl fade-up border-t border-b border-white/10 text-center">
+  <h2 class="text-4xl font-bold mb-6">⚡ What I Do</h2>
+  <p class="max-w-3xl mx-auto text-xl opacity-80">
+    I automate workflows, manage CI/CD pipelines, deploy cloud infrastructure,
+    monitor systems, and ensure scalable performance for modern applications.
+  </p>
+</section>
+
+<!-- 🌟 Footer -->
+<footer class="text-center py-10 bg-black/20 backdrop-blur-xl fade-up">
+  <p class="text-lg">Made with ❤️ by <span class="text-secondary font-bold">AKASH</span></p>
+  <p class="text-sm opacity-60">© 2025 | DevOps Portfolio</p>
 </footer>
 
 </body>
